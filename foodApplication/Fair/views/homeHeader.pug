@@ -1,0 +1,29 @@
+header
+    nav
+        ul.nav-ul
+            li.nav-list
+                a.nav-links(href='#features') FEATURES
+            li.nav-list
+                a.nav-links(href='#details') DETAILS
+            li.nav-list
+                a.nav-links(href='#reviews') REVIEWS
+            li.nav-list
+                a.nav-links(href='#plans') PLANS
+            if user
+                li.nav-list
+                    a.nav-links(href='/profilePage') #{user.name}
+                li.nav-list
+                    a.nav-links(href='javascript:;').logout LOGOUT
+            else
+                li.nav-list
+                    a.nav-links(href='/login') LOGIN
+
+    .showcase
+        h1.main-heading
+            | MEAL PLANS.
+            br
+            |  FOR 
+            span#spans.span-detector
+        .btns-container
+            a.btn.btn-full(href='') Book Now
+            a.btn.btn-empty(href='') Show me more

@@ -1,0 +1,28 @@
+section.contact
+    h2 CONTACT US
+    .contact-container
+        video.bg-video__content(autoplay='', muted='', loop='')
+            source(src='./img/Avocado.mp4', type='video/mp4')
+        .contact-form
+            form
+                .form-entry
+                    label(for='name') Name
+                    input#name(type='text', placeholder='Your Name')
+                .form-entry
+                    label(for='email') Email
+                    input#email(type='email', placeholder='Your Email')
+                .form-entry
+                    label(for='') How did you find us
+                    select(id='')
+                        option(value='Friends', selected='') Friends
+                        option(value='Advertisement') Advertisement
+                        option(value='Search') Search
+                        option(value='Other') Other
+                .form-entry
+                    label(for='comment') Drop us a Line
+                    textarea#comment(type='comment', cols='30', rows='10')
+                .form-entry
+                    input(type='checkbox', name='', id='', checked='')
+                    span I have read and agree with all the terms and conditions
+                .form-entry
+                    button.btn.btn-full REACH US

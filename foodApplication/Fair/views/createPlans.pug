@@ -1,0 +1,25 @@
+extends base
+block content
+    .body-bg
+        .login-box
+            form(action='/')
+                .login-form-entry
+                    label(for='name') Plan Name
+                    input#name(type='text', placeholder='Plan Name')
+                .login-form-entry
+                    label(for='description') Description
+                    input#description(type='text', placeholder='Description')
+                .login-form-entry
+                    label(for='rating') Average Rating
+                    input#rating(type='number', placeholder='Average Rating')
+                .login-form-entry
+                    label(for='price') Price
+                    input#price(type='number', placeholder='Price')
+                .login-form-entry
+                    label(for='price') Discount
+                    input#discount(type='number', placeholder='Discount')
+                .login-form-entry
+                    a.btn.btn-full.create(href='javascript:;') CREATE PLAN
+
+                
+                

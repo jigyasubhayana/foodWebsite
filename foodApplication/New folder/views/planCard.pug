@@ -1,0 +1,24 @@
+.container
+    h3(style="font-size: 2rem") #{plan.name}
+    p
+        span $#{plan.price}
+        |  /month
+        br
+        |                     That is only $#{Math.ceil(+plan.price/30)} per day
+    hr.hr
+    ul
+        li #{plan.description}
+        li Rating : #{plan.ratingsAverage}
+        li Order 24/7
+        li Free delivery
+        li Hassle free payments
+    hr.hr
+    p
+    if user
+        .login-form-entry
+            a.btn.btn-full(href='javascript:;', plan-id=`${plan["_id"]}`).payment Subscribe
+            a.btn.btn-full(href='javascript:;', plan-id=`${plan["_id"]}`).createReview Review
+            
+    else
+        a.btn-plan(href='/login') Subscribe
+

@@ -1,0 +1,13 @@
+extends base
+block header
+    include homeHeader
+block content
+    include features
+    include howTo
+    section#plans.plans
+        h2 UPGRADE YOUR PLANS
+        .container-parent-plan
+            for plan in plans
+                include planCard
+    include reviews
+    include contactUs

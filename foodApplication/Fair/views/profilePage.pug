@@ -1,0 +1,14 @@
+extends base
+block content
+  h2 #{user.role} Page
+  .profile-container
+    h2
+      p user: #{user.name}
+      p email: #{user.email}
+      p 
+        img(src=`${user.profileImage}`)
+      p  
+        input(type="file", name="").updateProfile
+    if user.role=="admin"
+        a.btn.btn-full(href="/manageUsers") Manage Users
+        a.btn.btn-full(href="/managePlans") Manage Plans

@@ -1,0 +1,18 @@
+nav.sticky(style="position:relative")
+    ul.nav-ul
+        li.nav-list
+            a.nav-links(href='/') FEATURES
+        li.nav-list
+            a.nav-links(href='/') DETAILS
+        li.nav-list
+            a.nav-links(href='/') REVIEWS
+        li.nav-list
+            a.nav-links(href='/plans') PLANS
+        if user
+            li.nav-list
+                a.nav-links(href='/profilePage') #{user.name}
+            li.nav-list
+                a.nav-links(href='javascript:;').logout LOGOUT
+        else
+            li.nav-list
+                a.nav-links(href='/login') LOGIN

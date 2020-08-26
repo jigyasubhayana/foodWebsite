@@ -1,0 +1,22 @@
+extends base
+block content
+    .body-bg
+        .login-box
+            form(action='/')
+                .login-form-entry
+                    label(for='name') Name
+                    input#name(type='text', placeholder='Full Name')
+                .login-form-entry
+                    label(for='email') Email
+                    input#email(type='email', placeholder='Email')
+                .login-form-entry
+                    label(for='password') Password
+                    input#password(type='password', placeholder='Password')
+                .login-form-entry
+                    label(for='confirmPassword') Confirm Password
+                    input#confirmPassword(type='password', placeholder='Confirm Password')
+                .login-form-entry
+                    a.btn.btn-full.signup(href='javascript:;') SIGNUP
+
+                
+                

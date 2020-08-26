@@ -1,0 +1,11 @@
+extends base
+block content
+    .body-bg
+        .login-box
+            form(action='/')
+                .login-form-entry
+                    label(for='review') Your Review 
+                    input#review(type='text', placeholder='Review')
+                .login-form-entry
+                    label(for='rating') Rating
+                    input#rating(type='number', placeholder='Rating')

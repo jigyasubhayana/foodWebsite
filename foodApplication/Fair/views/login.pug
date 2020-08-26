@@ -1,0 +1,16 @@
+extends base
+block content
+    .body-bg
+        .login-box
+            form(action='/home')
+                .login-form-entry
+                    label(for='email') Email
+                    input#email(type='email', placeholder='Login Email')
+                .login-form-entry
+                    label(for='password') Password
+                    input#name(type='password', placeholder='Password')
+                .login-form-entry
+                    a.btn.btn-full.login-button(href='javascript:;') LOGIN
+                    a.btn.btn-full(href='/forgetPassword') FORGOT?
+                    a.btn.btn-full(href='/signup') SIGNUP
+
